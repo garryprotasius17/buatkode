@@ -57,6 +57,7 @@ function generateQRCode() {
             const downloadLink = document.getElementById("downloadLink");
             const downloadBtn = document.getElementById("downloadBtn");
             downloadLink.href = pngDataUrl; // Menetapkan URL gambar PNG untuk unduhan
+            downloadLink.download = "qrcode.png"; // Tentukan nama file unduhan
             downloadLink.style.display = "inline-block"; // Menampilkan tombol unduh
             downloadBtn.disabled = false; // Mengaktifkan tombol unduh
           };
