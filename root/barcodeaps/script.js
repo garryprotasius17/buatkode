@@ -4,6 +4,7 @@ function generateQRCode() {
   const inputData2 = document.getElementById("inputData2").value.trim();
   const inputData3 = document.getElementById("inputData3").value.trim();
   const companyName = "RSU Santo Yusup Boro";
+  // const companyName = document.getElementById("companyName").value.trim();
 
   // Gabungkan semua data menjadi satu string, dengan label untuk masing-masing input
   let combinedData = "";
@@ -57,7 +58,7 @@ function generateQRCode() {
             const downloadLink = document.getElementById("downloadLink");
             const downloadBtn = document.getElementById("downloadBtn");
             downloadLink.href = pngDataUrl; // Menetapkan URL gambar PNG untuk unduhan
-            downloadLink.download = "qrcode.png"; // Tentukan nama file unduhan
+            downloadLink.download = "qrcode.png";
             downloadLink.style.display = "inline-block"; // Menampilkan tombol unduh
             downloadBtn.disabled = false; // Mengaktifkan tombol unduh
           };
