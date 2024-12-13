@@ -3,7 +3,7 @@ function generateQRCode() {
   const inputData1 = document.getElementById("inputData1").value.trim();
   const inputData2 = document.getElementById("inputData2").value.trim();
   const inputData3 = document.getElementById("inputData3").value.trim();
-//   const companyName = document.getElementById("companyName").value.trim();
+  const companyName = document.getElementById("companyName").value.trim();
 
   // Gabungkan semua data menjadi satu string, dengan label untuk masing-masing input
   let combinedData = "";
